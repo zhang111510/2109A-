@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="fathion">
+        <button class="btn1" onclick="c_width()">变宽</button>
+        <button class="btn2" onclick="c_height()">变高</button>
+        <button class="btn3" onclick="c_color()">变色</button>
+        <button class="btn4" onclick="c_none()">影藏</button>
+        <button class="btn5" onclick="c_reset()">重置</button>
+        <div id="box"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    var c_b = document.getElementById("box");
+    function c_width() {
+        c_b.style.width = "200px";
+    }
+    function c_height() {
+        c_b.style.height = "200px";
+    }
+    function c_color() {
+        c_b.style.backgroundColor = "red";
+    }
+    function c_none() {
+        c_b.style.visibility = "hidden";
+    }
+    function c_reset() {
+        c_b.style.cssText = "background-color: black; width: 100px; height: 100px;";
+    }
+</script>
+<style>
+    #box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+    }
+
+    .fathion {
+        width: 500px;
+        height: 300px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+
+    }
+</style>

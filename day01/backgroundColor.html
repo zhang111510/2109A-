@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav">
+        <button class="red" onclick="c_red()"></button>
+        <button class="green" onclick="c_green()"></button>
+        <button class="black" onclick="c_darkgray()"></button>
+
+        <ul>
+            <li class="li">新闻</li>
+            <li class="li">娱乐</li>
+            <li class="li">体育</li>
+            <li class="li">电影</li>
+            <li class="li">音乐</li>
+            <li class="li">旅游</li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
+<script>
+    var b_y = document.body
+    var u_l = document.querySelector('ul')
+    var l_i = document.getAnimations('.li')
+    function c_red() {
+        b_y.style.backgroundColor = 'deeppink';
+        u_l.style.backgroundColor = "red";
+        l_i.style.color = "green"
+
+
+    }
+    function c_green() {
+        b_y.style.backgroundColor = 'aquamarine'
+        u_l.style.backgroundColor = "green"
+        u_l.style.color = "green"
+        l_i.style.border = "0.5px green solid"
+    }
+    function c_darkgray() {
+        b_y.style.backgroundColor = 'darkgray'
+        u_l.style.backgroundColor = "black"
+        u_l.style.color = "green"
+    }
+</script>
+<style>
+    ul {
+        width: 400px;
+        height: 45px;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    li {
+        list-style: none;
+        text-align: center;
+        /* border: 0.5px solid #ccc; */
+        width: 16.5%;
+        height: 100%;
+    }
+
+    .red {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+    }
+
+    .green {
+        width: 10px;
+        height: 10px;
+        background-color: green;
+    }
+
+    .black {
+        width: 10px;
+        height: 10px;
+        background-color: darkgray;
+    }
+</style>
